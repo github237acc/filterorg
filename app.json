@@ -14,19 +14,19 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/subinps/Media-Search-bot",
-    "repository": "https://github.com/subinps/Media-Search-bot",
+    "website": "https://github.com/c4christy/filterorg",
+    "repository": "https://github.com/c4christy/filterorg",
     "env": {
         "BOT_TOKEN": {
-            "description": "Your bot token.",
+            "description": "Your bot C4 Christy token.",
             "value": ""
         },
         "API_ID": {
-            "description": "Get this value from https://my.telegram.org",
+            "description": "Get Christy this value from https://my.telegram.org",
             "value": ""
         },
         "API_HASH": {
-            "description": "Get this value from https://my.telegram.org",
+            "description": "Get this val Christy e from https://my.telegram.org",
             "value": ""
         },
         "CHANNELS": {
