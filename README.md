@@ -13,7 +13,7 @@
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/subinps/Media-Search-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/c4christy/filterorg)
 ### Hard Way
 
 ```bash
@@ -35,14 +35,8 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 ## Variables
 
 ### Required Variables
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
-* `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/dsuTn4qV2GA)
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/dsuTn4qV2GA)
-
+* `BOT_TOKEN`: Create a bot using [@BotFather
+C4 CHRISTY
 ### Optional Variables
 * `OMDB_API_KEY`: OMBD_API_KEY to generate imdb poster for filter results.Get it from [omdbapi.com](http://www.omdbapi.com/apikey.aspx)
 * `CUSTOM_FILE_CAPTION` : A custom caption for your files. You can format it with file_name, file_size, file_caption.(supports html formating). Don't use '\n' for now.
