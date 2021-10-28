@@ -18,7 +18,7 @@ async def start(bot, cmd):
                 if user.status == "kicked":
                     await bot.send_message(
                         chat_id=cmd.from_user.id,
-                        text="Sorry Sir, You are Banned to use me.",
+                        text="Sorry, You are Banned to use me.",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -27,14 +27,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**join My Updates Channel to use Me!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 Join MY Channel", url=https://t.me/filesharebotusers)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" Please Try Again", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -44,7 +44,7 @@ async def start(bot, cmd):
             except Exception:
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="Something went Wrong.",
+                    text="Something went Wrong. try again.",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+                        InlineKeyboardButton('GROUP', url='https://t.me/ask_movie_latest'),
+                        InlineKeyboardButton('CHANNEL', url='https://t.me/filesharebotusers')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -82,11 +82,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Please Join My Updates Channel to use Me!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 Join Updates Channel", url='https://t.me/filesharebotusers')
                     ]
                 ]
             )
@@ -99,12 +99,10 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("GROUP", url="https://t.me/ask_movie_latest"),
+                        InlineKeyboardButton("CHANNEL", url="https://t.me/filesharebotusers")
                     ],
-                    [
-                        InlineKeyboardButton("About", callback_data="about")
-                    ]
+                  
                 ]
             )
         )
@@ -192,8 +190,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('GROUP', url='https://t.me/ask_movie_latest'),
+            InlineKeyboardButton('CHANNEL', url='https://t.me/filesharebotusers')
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/filesharebotusers'>Click here</a>\nGROUP : <a href='https://t.me/ask_movie_latest'>GROUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
